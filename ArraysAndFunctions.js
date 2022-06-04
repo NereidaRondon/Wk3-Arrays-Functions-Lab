@@ -46,17 +46,25 @@ var ourTodoList = [];
 ourTodoList = myTodoList.concat(yourTodoList);
 console.log(ourTodoList);
 
+console.log("Sort by Alphabetical order");
 // sort the following array from Z-A
-/*ourTodoList.sort();
-ourTodoList.reverse;
-console.log(ourTodoList);*/
-
-ourTodoList.sort(function (a, b) {
-  return b - a;
-});
+ourTodoList.sort();
+ourTodoList.reverse();
 console.log(ourTodoList);
 
+/*ourTodoList.sort(function (a, b) {
+  return b - a;
+});
+console.log(ourTodoList);*/
+
 // create a function called reverse that takes in parameter
+let numbers = [1, 5, 4, 3, 2, 6, 3, 1];
+console.log("Array in Reverse");
+numbers.sort();
+numbers.reverse();
+console.log(numbers);
+
+function reverse() {}
 // this function will return the opposite of whatever is passed in
 // if its a boolean, return the opposite
 // if its a number, or a string, return the reverse (i.e. 1234 becomes 4321, Name becomes emaN)
@@ -64,6 +72,11 @@ console.log(ourTodoList);
 
 // create a function called addingMachine that will add all passed numbers and return the total
 // Note: you don't know how many numbers will be passed
+
+let addingMachine = numbers.reduce(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+});
+console.log(addingMachine);
 
 // You just signed a contract as an estimator for a restoration company.
 // Your contract states that you take home 10% of the profits on the first $100,000
